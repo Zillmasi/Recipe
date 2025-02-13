@@ -1,0 +1,44 @@
+
+ %common-use{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: .75rem;
+    align-items: center;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s; 
+    font: {
+      weight: 600;
+      size: 1.125rem;
+    }
+
+}
+
+
+
+aside {
+  font-family: cursive;
+  .meal-btn {
+    background-color: #f29724;
+    color: white;
+    @extend %common-use;   
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: none
+    }
+
+  }
+
+  .sec-btn{
+    @extend %common-use;  
+    font-weight: 100;
+    border: 1px solid rgba(0, 0, 0, 0.150);
+    
+    &:hover{
+      transform: scale(1.05);
+      background-color: transparent;
+      box-shadow: 0 20px 25px -5px #f295240c ,0 8px 10px -6px #f2952421;
+  }
+  }
+}
